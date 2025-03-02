@@ -1,5 +1,6 @@
 import "./style.css";
+// import "./topics/01-basics-types";
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
 
-app.innerHTML = `<h1>Hello, World!</h1>`;
+app.innerHTML = `Hello, World!`;
