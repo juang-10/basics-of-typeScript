@@ -1,13 +1,15 @@
 export class Person {
+  // Pueden definirse los atributos de la clase en el constructor
+  // y asignarles un valor por defecto
   
-  public name: string;
-  public address: string;
+  // public name: string;
+  // public address: string;
 
-  constructor(name: string, address: string) {
-    this.name = name;
-    this.address = address;
-  }
+  constructor(
+    public name: string, 
+    public address: string
+  ) {}
 }
 
-const iroman = new Person('Tony Stark', 'New York');
+const iroman = new Person("Tony Stark", "New York");
 console.log(iroman);
