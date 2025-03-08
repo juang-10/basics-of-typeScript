@@ -1,4 +1,4 @@
-interface Product {
+export interface Product {
   description: string;
   price: number;
 }
@@ -19,7 +19,7 @@ interface TaxtCalculationOptions {
 }
 
 // function taxCalculation({ products, tax }: TaxtCalculationOptions): [number, number] {
-function taxCalculation(options: TaxtCalculationOptions): [number, number] {
+export function taxCalculation(options: TaxtCalculationOptions): [number, number] {
   const { products, tax } = options;
 
   let total = 0;
@@ -31,13 +31,13 @@ function taxCalculation(options: TaxtCalculationOptions): [number, number] {
   return [total, total * tax];
 }
 
-const shoppingCart = [phone, tablet];
-const tax = 0.15;
+// const shoppingCart = [phone, tablet];
+// const tax = 0.15;
 
-const [total, taxTotal] = taxCalculation({
-  products: shoppingCart,
-  tax,
-});
+// const [total, taxTotal] = taxCalculation({
+//   products: shoppingCart,
+//   tax,
+// });
 
-console.log("🚀 ~ Total", total);
-console.log("🚀 ~ Tax", taxTotal);
+// console.log("🚀 ~ Total", total);
+// console.log("🚀 ~ Tax", taxTotal);
