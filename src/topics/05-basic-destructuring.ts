@@ -20,7 +20,10 @@ const audioPlayer: AudioPlayer = {
   }
 }
 
-const { audioVolume, songDuration, song, details } = audioPlayer;
-const { author, year } = details;
+// const { audioVolume, songDuration, song, details } = audioPlayer;
+// const { author, year } = details;
 
-console.log({ audioVolume, songDuration, song, author, year });
+// console.log({ audioVolume, songDuration, song, author, year });
+
+const [p1, p2, trunks, p4, p5, p6 = "not found"]: string[] = ["Goku", "Vegeta", "Gohan", "Trunks", "Piccolo"];
+console.log('Personaje 3: ', p6);
