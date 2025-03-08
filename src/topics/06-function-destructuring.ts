@@ -24,7 +24,7 @@ function taxCalculation(options: TaxtCalculationOptions): [number, number] {
 
   let total = 0;
 
-  products.forEach(({ price }: Pick<Product, "price">) => {
+  products.forEach(({ price }) => {
     total += price;
   });
 
